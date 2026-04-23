@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Maze Race</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1 class="title">🚀 AI Maze Race Arena</h1>
+  <p class="subtitle">BFS vs DFS vs A* vs Best First</p>
+
+  <div class="controls">
+    <button id="startBtn">Start Race</button>
+    <button id="resetBtn">Reset</button>
+  </div>
+
+  <h2 id="winner">Winner: None</h2>
+
+  <div class="grid-container">
+
+  <!-- TOP ROW -->
+  <div class="algo-box">
+    <h3>A*</h3>
+    <div id="grid-astar" class="grid"></div>
+  </div>
+
+  <div class="algo-box">
+    <h3>Best First</h3>
+    <div id="grid-best" class="grid"></div>
+  </div>
+
+  <!-- BOTTOM ROW -->
+  <div class="algo-box">
+    <h3>BFS</h3>
+    <div id="grid-bfs" class="grid"></div>
+  </div>
+
+  <div class="algo-box">
+    <h3>DFS</h3>
+    <div id="grid-dfs" class="grid"></div>
+  </div>
+
+</div>
+
+  <script type="module" src="./script.js"></script>
+
+</body>
+</html>
